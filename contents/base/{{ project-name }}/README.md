@@ -13,7 +13,7 @@ This is a [Svelte](https://svelte.dev) project.
 | Lint code              | `pnpm lint`                                  |
 | Run tests              | `pnpm test`                                  |
 | Build Docker image     | `docker build -t {{ project-name }} .`       |
-| Run Docker container   | `docker run -p 3000:3000 {{ project-name }}` |
+| Run Docker container   | `docker run -p 5173:5173 {{ project-name }}` |
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ Then, run the development server:
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -69,7 +69,7 @@ To build and run the Docker container:
 docker build -t {{ project-name }} .
 
 # Run the container
-docker run -p 3000:3000 {{ project-name }}
+docker run -p 5173:5173 {{ project-name }}
 ```
 
-The application will be available at http://localhost:3000.
+The application will be available at http://localhost:5173.

@@ -1,9 +1,9 @@
 ---
-description: "TypeScript Svelt Basic"
-authors: ["Jimmie Fulton <jimmie@ybor.ai>, Jose Pimienta <jose@ybor.ai"]
-languages: []
-frameworks: []
-tags: []
+description: "TypeScript Svelte Frontend"
+authors: ["Ybor Technology"]
+languages: ["TypeScript"]
+frameworks: ["Svelte"]
+tags: ["Frontend", "Svelte"]
 
 requires:
   archetect: "2.0.0"

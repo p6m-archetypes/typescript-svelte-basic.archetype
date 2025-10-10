@@ -109,6 +109,45 @@ Ideal for:
 4. **Component Libraries**: Building reusable component packages
 5. **Lightweight Applications**: Projects requiring minimal JavaScript payload
 
+## 🔌 Backend Integration Patterns
+
+This frontend application typically consumes:
+
+1. **GraphQL Gateways**: Primary recommended pattern
+   - Unified GraphQL API aggregating multiple backend services
+   - Client-driven queries reduce over-fetching
+   - Single endpoint simplifies frontend architecture
+   - Real-time updates via GraphQL subscriptions
+
+2. **REST APIs**: Traditional HTTP/JSON services
+   - Public REST APIs with OpenAPI documentation
+   - Direct service-to-frontend communication
+   - Standard HTTP verbs (GET, POST, PUT, DELETE)
+   - Works well for simple CRUD operations
+
+3. **Backend-for-Frontend (BFF)**: Dedicated backend for this frontend
+   - Custom API tailored to this application's needs
+   - Can be GraphQL or REST
+   - Aggregates multiple services on the backend
+   - Optimizes payload size and query patterns
+
+**Architecture Examples**:
+
+**Option 1: GraphQL Gateway (Recommended)**
+```
+Svelte App → GraphQL Gateway → gRPC/REST Services
+```
+
+**Option 2: Direct REST API**
+```
+Svelte App → REST Services → Database
+```
+
+**Option 3: BFF Pattern**
+```
+Svelte App → Dedicated BFF (GraphQL/REST) → Multiple Services
+```
+
 ## 📚 What's Inside
 
 ### Svelte Compiler
